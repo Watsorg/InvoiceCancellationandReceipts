@@ -6,12 +6,70 @@ package com.myspace.invoicecancellationandreceipts;
 
 public class Receipts implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Receipts() {
-    }
+	@org.kie.api.definition.type.Label("Number")
+	private java.lang.Long number;
+	@org.kie.api.definition.type.Label("Id")
+	private java.lang.Long id;
+	@org.kie.api.definition.type.Label("PostDate")
+	private java.util.Date postDate;
+	@org.kie.api.definition.type.Label("ApplyByReceivable")
+	private java.lang.String applyByReceivable;
+	@org.kie.api.definition.type.Label("ContractId")
+	private java.lang.Long contractId;
 
+	public Receipts() {
+	}
 
+	public java.lang.Long getNumber() {
+		return this.number;
+	}
 
+	public void setNumber(java.lang.Long number) {
+		this.number = number;
+	}
+
+	public java.lang.Long getId() {
+		return this.id;
+	}
+
+	public void setId(java.lang.Long id) {
+		this.id = id;
+	}
+
+	public java.util.Date getPostDate() {
+		return this.postDate;
+	}
+
+	public void setPostDate(java.util.Date postDate) {
+		this.postDate = postDate;
+	}
+
+	public java.lang.String getApplyByReceivable() {
+		return this.applyByReceivable;
+	}
+
+	public void setApplyByReceivable(java.lang.String applyByReceivable) {
+		this.applyByReceivable = applyByReceivable;
+	}
+
+	public java.lang.Long getContractId() {
+		return this.contractId;
+	}
+
+	public void setContractId(java.lang.Long contractId) {
+		this.contractId = contractId;
+	}
+
+	public Receipts(java.lang.Long number, java.lang.Long id,
+			java.util.Date postDate, java.lang.String applyByReceivable,
+			java.lang.Long contractId) {
+		this.number = number;
+		this.id = id;
+		this.postDate = postDate;
+		this.applyByReceivable = applyByReceivable;
+		this.contractId = contractId;
+	}
 
 }
