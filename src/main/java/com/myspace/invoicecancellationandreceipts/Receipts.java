@@ -15,7 +15,7 @@ public class Receipts implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("PostDate")
 	private java.util.Date postDate;
 	@org.kie.api.definition.type.Label("ApplyByReceivable")
-	private java.lang.String applyByReceivable;
+	private boolean applyByReceivable;
 	@org.kie.api.definition.type.Label("ContractId")
 	private java.lang.Long contractId;
 
@@ -46,14 +46,6 @@ public class Receipts implements java.io.Serializable {
 		this.postDate = postDate;
 	}
 
-	public java.lang.String getApplyByReceivable() {
-		return this.applyByReceivable;
-	}
-
-	public void setApplyByReceivable(java.lang.String applyByReceivable) {
-		this.applyByReceivable = applyByReceivable;
-	}
-
 	public java.lang.Long getContractId() {
 		return this.contractId;
 	}
@@ -62,8 +54,16 @@ public class Receipts implements java.io.Serializable {
 		this.contractId = contractId;
 	}
 
+	public boolean isApplyByReceivable() {
+		return this.applyByReceivable;
+	}
+
+	public void setApplyByReceivable(boolean applyByReceivable) {
+		this.applyByReceivable = applyByReceivable;
+	}
+
 	public Receipts(java.lang.Long number, java.lang.Long id,
-			java.util.Date postDate, java.lang.String applyByReceivable,
+			java.util.Date postDate, boolean applyByReceivable,
 			java.lang.Long contractId) {
 		this.number = number;
 		this.id = id;
